@@ -20,8 +20,9 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-    @GetMapping
+    @GetMapping(value = "/list")
     public List<Student> getStudents(){
         return studentService.getStudents();
     }
+
 }
